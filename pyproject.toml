@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mole-mcp"
+version = "0.1.0"
+description = "Servidor MCP que conecta Muse con la Estación IA de Gonzalo (estacion-ia, pipeline, outreach, notas)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Mole (Muse) para Gonzalo Acuña Nava" }]
+dependencies = ["mcp>=1.12,<2"]
+
+[project.scripts]
+mole-mcp = "mole_mcp_server:main"
+
+[tool.setuptools]
+py-modules = []
